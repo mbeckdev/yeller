@@ -1,12 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import birdGrey from './assets/yellerBirdGreyMinified.svg';
+import birdWhite from './assets/yellerBirdWhiteMinified.svg';
+import birdBlue from './assets/yellerBirdBlueMinified.svg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={birdGrey} height="100" width="100" alt="bird" />
+        <img src={birdBlue} height="100" width="100" alt="bird" />
+        <img src={birdWhite} height="100" width="100" alt="bird" />
+
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
