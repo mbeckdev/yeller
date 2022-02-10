@@ -6,8 +6,13 @@ import birdBlue from 'assets/yellerBirdBlueMinified.svg';
 
 import Navbar from './Navbar';
 
+import Login from '../screens/Login';
+import Home from '../screens/Home';
+import Notifications from '../screens/Notifications';
+import Profile from '../screens/Profile';
+
 const { LOGIN, HOME, NOTIFICATIONS, PROFILE } = routeConstants;
-type navItemType = { name: String; route: String };
+// type navItemType = { name: String; route: String };
 
 let navItems = [LOGIN, HOME, NOTIFICATIONS, PROFILE];
 
@@ -28,10 +33,10 @@ function App() {
 
           <Routes>
             <Route path={'/'} element={LOGIN.name} />
-            <Route path={LOGIN.route} element={LOGIN.name} />
-            <Route path={HOME.route} element={HOME.name} />
-            <Route path={NOTIFICATIONS.route} element={NOTIFICATIONS.name} />
-            <Route path={PROFILE.route} element={PROFILE.name} />
+            <Route path={LOGIN.route} element={<Login />} />
+            <Route path={HOME.route} element={<Home />} />
+            <Route path={NOTIFICATIONS.route} element={<Notifications />} />
+            <Route path={PROFILE.route} element={<Profile />} />
           </Routes>
         </div>
       </div>
