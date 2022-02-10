@@ -4,7 +4,12 @@ import './App.css';
 import routeConstants from 'shared/constants/routes';
 import birdBlue from 'assets/yellerBirdBlueMinified.svg';
 
+import Navbar from './Navbar';
+
 const { LOGIN, HOME, NOTIFICATIONS, PROFILE } = routeConstants;
+type navItemType = { name: String; route: String };
+
+let navItems = [LOGIN, HOME, NOTIFICATIONS, PROFILE];
 
 // import birdGrey from '../../assets/yellerBirdGreyMinified.svg';
 // import birdWhite from '../../assets/yellerBirdWhiteMinified.svg';
@@ -17,21 +22,10 @@ function App() {
       <div className="App">
         <div className="App">
           <h1>App Component</h1>
+
           <img src={birdBlue} height="100" width="100" alt="bird" />
-          <ul className="App-nav-list">
-            <li className="App-nav-item">
-              <Link to={LOGIN.route}>{LOGIN.name}</Link>
-            </li>
-            <li className="App-nav-item">
-              <Link to={HOME.route}>{HOME.name}</Link>
-            </li>
-            <li className="App-nav-item">
-              <Link to={NOTIFICATIONS.route}>{NOTIFICATIONS.name}</Link>
-            </li>
-            <li className="App-nav-item">
-              <Link to={PROFILE.route}>{PROFILE.name}</Link>
-            </li>
-          </ul>
+          <Navbar someNavItems={navItems} />
+
           <Routes>
             <Route path={'/'} element={LOGIN.name} />
             <Route path={LOGIN.route} element={LOGIN.name} />
