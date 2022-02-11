@@ -1,0 +1,72 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~ Split into large sections of the login screen ~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ .login__main           ~~ */
+/* ~~ .login__art-container  ~~ */
+/* ~~ .login__other-links    ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.login {
+  color: blue;
+  border: 1px solid red;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ .login__main           ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.login__main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.login__or-container {
+  display: flex;
+  height: 20px;
+}
+
+.login__decorative-line-container {
+  display: flex;
+  align-items: center;
+}
+
+.login__decorative-line {
+  width: 135px;
+
+  border: 1px solid grey;
+  border-top: none;
+  margin: 0 4px;
+}
+
+.login__or-text {
+  margin: 0 4px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ .login__art-container  ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.login__art-container {
+  height: 300px;
+  border: 1px solid blue;
+}
+
+.login__picture {
+  /* background-image: url('loginPicture.jpg'); The image used */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Assures image stays in place */
+  background-position: center; /* Controls your image position */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ .login__other-links    ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.login__other-links {
+  display: flex;
+  list-style: none;
+  padding: 3px;
+  border: 1px solid grey;
+}

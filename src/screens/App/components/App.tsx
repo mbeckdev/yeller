@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import routeConstants from 'shared/constants/routes';
+import routeConstants from 'shared/constants/routes';
 // import RouteWithSubRoutes from 'shared/components';
 
 import './App.css';
@@ -10,12 +10,12 @@ import Navbar from './Navbar';
 
 import birdBlue from 'assets/yellerBirdBlueMinified.svg';
 
-// import Login from '../screens/Login';
-// import Home from '../screens/Home';
-// import Notifications from '../screens/Notifications';
-// import Profile from '../screens/Profile';
+import Login from '../screens/Login';
+import Home from '../screens/Home';
+import Notifications from '../screens/Notifications';
+import Profile from '../screens/Profile';
 
-// const { LOGIN, HOME, NOTIFICATIONS, PROFILE } = routeConstants;
+const { LOGIN, HOME, NOTIFICATIONS, PROFILE } = routeConstants;
 // // type navItemType = { name: String; route: String };
 
 // let navItems = [LOGIN, HOME, NOTIFICATIONS, PROFILE];
@@ -31,13 +31,16 @@ const App: React.FC = () => {
     <Router>
       <div className="App">
         <div className="App">
-          <h1>App Component</h1>
+          {/* <h1>App Component</h1> */}
 
-          <img src={birdBlue} height="100" width="100" alt="bird" />
-          <Navbar />
-
+          {/* <img src={birdBlue} height="100" width="100" alt="bird" /> */}
+          {/* <Navbar /> */}
           <Routes>
-            <Route path="/" element={<div>ha</div>} />
+            <Route path="/" element={<Login />} />
+            <Route path={LOGIN.route} element={<Login />} />
+            <Route path={HOME.route} element={<Home />} />
+            <Route path={NOTIFICATIONS.route} element={<Notifications />} />
+            <Route path={PROFILE.route} element={<Profile />} /> */
           </Routes>
         </div>
       </div>

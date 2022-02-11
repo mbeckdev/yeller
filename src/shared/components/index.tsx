@@ -1,3 +1,5 @@
-import { default as RouteWithSubRoutes } from './RouteWithSubRoutes.js';
+// import { default as RouteWithSubRoutes } from './RouteWithSubRoutes.js';
 
-export default RouteWithSubRoutes;
+// export default RouteWithSubRoutes;
+
+export {};
