@@ -1,27 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import routeConstants from 'shared/constants/routes';
-import birdBlue from 'assets/yellerBirdBlueMinified.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import routeConstants from 'shared/constants/routes';
+// import RouteWithSubRoutes from 'shared/components';
 
+import './App.css';
+import routes from 'shared/constants/';
+// import routes from '../route' ----------------;
 import Navbar from './Navbar';
 
-import Login from '../screens/Login';
-import Home from '../screens/Home';
-import Notifications from '../screens/Notifications';
-import Profile from '../screens/Profile';
+import birdBlue from 'assets/yellerBirdBlueMinified.svg';
 
-const { LOGIN, HOME, NOTIFICATIONS, PROFILE } = routeConstants;
-// type navItemType = { name: String; route: String };
+// import Login from '../screens/Login';
+// import Home from '../screens/Home';
+// import Notifications from '../screens/Notifications';
+// import Profile from '../screens/Profile';
 
-let navItems = [LOGIN, HOME, NOTIFICATIONS, PROFILE];
+// const { LOGIN, HOME, NOTIFICATIONS, PROFILE } = routeConstants;
+// // type navItemType = { name: String; route: String };
+
+// let navItems = [LOGIN, HOME, NOTIFICATIONS, PROFILE];
 
 // import birdGrey from '../../assets/yellerBirdGreyMinified.svg';
 // import birdWhite from '../../assets/yellerBirdWhiteMinified.svg';
 // import birdBlue from '../../assets/yellerBirdBlueMinified.svg';
 // import birdBlueTest from '../../assets/yellerBirdBlueTest.svg';
 
-function App() {
+const App: React.FC = () => {
+  console.log('routes', routes);
   return (
     <Router>
       <div className="App">
@@ -29,22 +34,55 @@ function App() {
           <h1>App Component</h1>
 
           <img src={birdBlue} height="100" width="100" alt="bird" />
-          <Navbar someNavItems={navItems} />
+          <Navbar />
 
           <Routes>
-            <Route path={'/'} element={LOGIN.name} />
-            <Route path={LOGIN.route} element={<Login />} />
-            <Route path={HOME.route} element={<Home />} />
-            <Route path={NOTIFICATIONS.route} element={<Notifications />} />
-            <Route path={PROFILE.route} element={<Profile />} />
+            <Route path="/" element={<div>ha</div>} />
           </Routes>
         </div>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
+
+// {routes.map((route, i) => (
+//   <RouteWithSubRoutes key={i} {...route} />
+// ))}
+
+// {
+//   /* <Route path={'/'} element={LOGIN.name} />
+// <Route path={LOGIN.route} element={<Login />} />
+// <Route path={HOME.route} element={<Home />} />
+// <Route path={NOTIFICATIONS.route} element={<Notifications />} />
+// <Route path={PROFILE.route} element={<Profile />} /> */
+// }
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="App">
+//         <div className="App">
+//           <h1>App Component</h1>
+
+//           <img src={birdBlue} height="100" width="100" alt="bird" />
+//           <Navbar someNavItems={navItems} />
+
+//           <Routes>
+//             <Route path={'/'} element={LOGIN.name} />
+//             <Route path={LOGIN.route} element={<Login />} />
+//             <Route path={HOME.route} element={<Home />} />
+//             <Route path={NOTIFICATIONS.route} element={<Notifications />} />
+//             <Route path={PROFILE.route} element={<Profile />} />
+//           </Routes>
+//         </div>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// .....
 
 // {/* <header className="App-header">
 //           {/* <img src={birdGrey} height="100" width="100" alt="bird" />

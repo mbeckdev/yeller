@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Notifications() {
+const Notifications: React.FC = () => {
   return <h1>Notifications</h1>;
-}
+};
 
 export default Notifications;

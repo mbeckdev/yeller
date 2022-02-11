@@ -1,4 +1,4 @@
-export default Object.freeze({
+const routeConstants = Object.freeze({
   LOGIN: {
     name: 'Login',
     route: '/login',
@@ -16,3 +16,5 @@ export default Object.freeze({
     route: '/me',
   },
 });
+
+export default routeConstants;
