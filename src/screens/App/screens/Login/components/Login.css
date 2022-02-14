@@ -7,14 +7,9 @@
 /* ~~ .login__art-container  ~~ */
 /* ~~ .login__other-links    ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* @value colors: "../../../shared/constants/colors.css"; */
-/* @value primary1 from "../../../shared/constants/colors.css"; */
-/* @value primary1 from colors; */
 
 .login {
-  /* color: blue; */
   color: var(--bg-primary);
-  /* color: primary; */
   border: 1px solid red;
 }
 

@@ -1,6 +1,23 @@
 :root {
-  --bg-primary: #00f;
-  --bg-secondary: #0f0;
-  --text-primary: #033;
-  --text-secondary: #033;
+  --bg-primary: #000;
+  --bg-secondary: rgb(0, 186, 124);
+  --bg-tertiary: rgb(21, 24, 28);
+  --text-primary: rgb(217, 217, 217);
+  --text-secondary: rgb(110, 118, 125);
+  --text-tertiary: rgb(28, 154, 239);
+  --color-blue: var(--text-tertiary);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
