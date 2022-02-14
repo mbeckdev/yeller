@@ -21,16 +21,13 @@
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  /* padding-left: 20px; */
+  padding: 20px;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.login__or-container {
-  display: flex;
-  height: 20px;
-}
-
+/* more styles under .login__main */
 .login__decorative-line-container {
   display: flex;
   align-items: center;
@@ -38,14 +35,35 @@
 
 .login__decorative-line {
   width: 135px;
-
   border: 1px solid grey;
   border-top: none;
   margin: 0 4px;
 }
 
+.login__or-container {
+  display: flex;
+  height: 20px;
+}
+
 .login__or-text {
   margin: 0 4px;
+}
+
+.login__logo {
+  padding-bottom: 4px;
+}
+
+.login__tagline {
+  margin-bottom: 20px;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.login__title {
+  /* font-size: 64px; */
+  font-size: xxx-large;
+  font-weight: 900;
+  margin: 48px 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

@@ -2,13 +2,21 @@ import React from 'react';
 import './Login.css';
 
 // import loginPicture from 'assets/loginPicture.jpg';
+import yellerBirdGrey from 'assets/yellerBirdGrey.svg';
+// import asdf from 'assets/';
 
 const Login: React.FC = () => {
   return (
     <div className="login">
       <main className="login__main">
-        <h1>Happening now</h1>
-        <p>Join Yeller today.</p>
+        <img
+          className="login__logo"
+          src={yellerBirdGrey}
+          width="50"
+          alt="bird"
+        />
+        <h1 className="login__title">Happening now</h1>
+        <p className="login__tagline">Join Yeller today.</p>
         <button>btn1</button>
         <button>btn2</button>
         <div className="login__or-container">
