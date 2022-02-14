@@ -1,6 +1,7 @@
 import React from 'react';
 import './Login.css';
-import loginPicture from 'assets/loginPicture.jpg';
+
+// import loginPicture from 'assets/loginPicture.jpg';
 
 const Login: React.FC = () => {
   return (

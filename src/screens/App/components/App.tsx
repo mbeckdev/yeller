@@ -6,9 +6,9 @@ import routeConstants from 'shared/constants/routes';
 import './App.css';
 import routes from 'shared/constants/';
 // import routes from '../route' ----------------;
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 
-import birdBlue from 'assets/yellerBirdBlueMinified.svg';
+// import birdBlue from 'assets/yellerBirdBlueMinified.svg';
 
 import Login from '../screens/Login';
 import Home from '../screens/Home';
@@ -16,6 +16,7 @@ import Notifications from '../screens/Notifications';
 import Profile from '../screens/Profile';
 
 const { LOGIN, HOME, NOTIFICATIONS, PROFILE } = routeConstants;
+console.log('routeConstants haha', routeConstants);
 // // type navItemType = { name: String; route: String };
 
 // let navItems = [LOGIN, HOME, NOTIFICATIONS, PROFILE];
@@ -40,7 +41,7 @@ const App: React.FC = () => {
             <Route path={LOGIN.route} element={<Login />} />
             <Route path={HOME.route} element={<Home />} />
             <Route path={NOTIFICATIONS.route} element={<Notifications />} />
-            <Route path={PROFILE.route} element={<Profile />} /> */
+            <Route path={PROFILE.route} element={<Profile />} />
           </Routes>
         </div>
       </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
+import 'shared/styles/reset.css';
+import 'shared/styles/styles.css';
 // import App from './screens/App/App';
 // import App from './screens/App';
 import App from 'screens/App';
