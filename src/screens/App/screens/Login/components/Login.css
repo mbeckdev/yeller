@@ -8,36 +8,64 @@
 /* ~~ .login__other-links    ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.login {
-  /* color: var(--bg-primary); */
-  border: 1px solid red;
-}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~ .login__main           ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .login__main {
-  /* color: blue; */
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  /* padding-left: 20px; */
   padding: 20px;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
+.login__main-container {
+  padding: 16px;
+}
+
 /* more styles under .login__main */
+.login__already-have-an-account {
+  margin-top: 40px;
+}
+
+.login__already-have-an-account-text {
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.login__by-signing-up {
+  font-size: 12px;
+  color: var(--text-secondary);
+
+  margin-bottom: 16px;
+}
+
+.login__by-signing-up-link {
+  color: var(--text-tertiary);
+  text-decoration: none;
+}
+
+.login__by-signing-up-link:hover {
+  text-decoration: underline;
+}
+
+.login__decorative-line {
+  width: 120px;
+  border: 1px solid grey;
+  border-top: none;
+  margin: 0 4px;
+}
+
 .login__decorative-line-container {
   display: flex;
   align-items: center;
 }
 
-.login__decorative-line {
-  width: 135px;
-  border: 1px solid grey;
-  border-top: none;
-  margin: 0 4px;
+.login__logo {
+  padding-bottom: 4px;
 }
 
 .login__or-container {
@@ -49,10 +77,6 @@
   margin: 0 4px;
 }
 
-.login__logo {
-  padding-bottom: 4px;
-}
-
 .login__tagline {
   margin-bottom: 20px;
   font-size: x-large;
@@ -60,7 +84,6 @@
 }
 
 .login__title {
-  /* font-size: 64px; */
   font-size: xxx-large;
   font-weight: 900;
   margin: 48px 0;
@@ -70,23 +93,59 @@
 /* ~~ .login__art-container  ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .login__art-container {
-  height: 300px;
+  height: 327px;
   border: 1px solid blue;
+  min-height: 45vh;
+  position: relative;
 }
 
 .login__picture {
-  /* background-image: url('loginPicture.jpg'); The image used */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-attachment: fixed; /* Assures image stays in place */
-  background-position: center; /* Controls your image position */
+  height: 100%;
+  z-index: -1;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.login__logo-overlay {
+  height: 75%;
+}
+
+.login__logo-overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~ .login__other-links    ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.login__navlink,
+.login__navlink-copy {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding-right: 16px;
+  margin: 5px 0;
+}
+
+.login__navlink:hover {
+  text-decoration: underline;
+}
+
 .login__other-links {
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+
   padding: 3px;
-  border: 1px solid grey;
+  font-size: small;
+  padding: 14px 16px;
 }
