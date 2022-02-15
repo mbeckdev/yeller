@@ -9,7 +9,7 @@ interface ButtonProps {
 
 // buttonType are "login-primary", "login-secondary", "login-tertiary"  for colors
 // buttonIncludes are "onlytext", "onlyicon", "textandicon"
-// buttonText is optional
+// buttonText and buttonClassName are optional
 
 const Button: React.FC<ButtonProps> = ({
   children,
@@ -17,13 +17,6 @@ const Button: React.FC<ButtonProps> = ({
   buttonText,
   buttonClassName,
 }) => {
-  // const Button: React.FC<ButtonProps> = ({
-  //   children,
-  //   buttonType,
-
-  // }) => {
-  // const Button: React.FC<{ buttonType: string }> = ({ children, buttonType }) => {
-
   let buttonStyle: string = 'login-primary';
   if (buttonType === 'login-primary') {
     buttonStyle = 'button--login-primary';
@@ -33,13 +26,7 @@ const Button: React.FC<ButtonProps> = ({
   } else if (buttonType === 'login-tertiary') {
     buttonStyle = 'button--login-tertiary';
   }
-  // if (buttonType === 'primary') {
-  //   buttonStyle = 'button--primary';
-  // } else if (buttonType === 'secondary') {
-  //   buttonStyle = 'button--secondary';
-  // } else if (buttonType === 'tertiary') {
-  //   buttonStyle = 'button--tertiary';
-  // }
+
   let className = '';
 
   if (buttonClassName) {

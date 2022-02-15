@@ -10,7 +10,7 @@
   width: 300px;
   min-width: 36px;
   max-width: 380px;
-  height: 40px;
+  height: 2.5rem;
 }
 
 /* black background, blue text */
@@ -28,14 +28,3 @@
   background-color: #fff;
   color: var(--text-secondary);
 }
-/* black background, blue text
-.button--primary {
-  background-color: var(--bg-primary);
-  color: var(--text-tertiary);
-}
-.button--secondary {
-  background-color: green;
-}
-.button--tertiary {
-  background-color: blue;
-} */

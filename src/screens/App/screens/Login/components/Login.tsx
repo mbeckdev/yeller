@@ -59,7 +59,11 @@ const Login: React.FC = () => {
             <div className="login__already-have-an-account-text">
               Already have an account?
             </div>
-            <Button buttonType="login-primary" buttonText="Sign in" />
+            <Button
+              buttonType="login-primary"
+              buttonText="Sign in"
+              buttonClassName="login__button--sign-in"
+            />
           </div>
         </div>
       </main>
