@@ -18,13 +18,14 @@ const Login: React.FC = () => {
             width="50"
             alt="bird"
           />
-          <Button buttonType="login-primary" />
-          <Button buttonType="login-secondary" />
-          <Button buttonType="login-tertiary" />
+
           <h1 className="login__title">Happening now</h1>
           <p className="login__tagline">Join Yeller today.</p>
-          <button>btn1</button>
-          <button>btn2</button>
+          <Button
+            buttonType="login-tertiary"
+            buttonText="Sign up with Google"
+          />
+
           <div className="login__or-container">
             <div className="login__decorative-line-container">
               <div className="login__decorative-line"></div>
@@ -35,7 +36,11 @@ const Login: React.FC = () => {
               <div className="login__decorative-line"></div>
             </div>
           </div>
-          <button>btn3</button>
+          <Button
+            buttonType="login-secondary"
+            buttonText="Sign up with email"
+            buttonClassName="login__button--sign-up"
+          />
           <div className="login__by-signing-up">
             By signing up, you agree to the{' '}
             <a className="login__by-signing-up-link" href="#">
@@ -54,7 +59,7 @@ const Login: React.FC = () => {
             <div className="login__already-have-an-account-text">
               Already have an account?
             </div>
-            <button>Sign in</button>
+            <Button buttonType="login-primary" buttonText="Sign in" />
           </div>
         </div>
       </main>
