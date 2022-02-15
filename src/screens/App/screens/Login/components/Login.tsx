@@ -4,7 +4,8 @@ import './Login.css';
 import loginPicture from 'assets/loginPicture.jpg';
 import yellerBirdGrey from 'assets/yellerBirdGrey.svg';
 import yellerBirdWhite from 'assets/yellerBirdWhite.svg';
-// import asdf from 'assets/';
+
+import Button from 'shared/components/Button';
 
 const Login: React.FC = () => {
   return (
@@ -17,6 +18,9 @@ const Login: React.FC = () => {
             width="50"
             alt="bird"
           />
+          <Button buttonType="login-primary" />
+          <Button buttonType="login-secondary" />
+          <Button buttonType="login-tertiary" />
           <h1 className="login__title">Happening now</h1>
           <p className="login__tagline">Join Yeller today.</p>
           <button>btn1</button>

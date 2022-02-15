@@ -1,0 +1,41 @@
+.button {
+  /* background-color: blue; */
+  border-radius: 1000px;
+  border: 1px solid transparent;
+  padding: 0 1rem;
+  cursor: pointer;
+  line-height: 1.25rem;
+  font-weight: 700;
+  font-size: 15px;
+  width: 300px;
+  min-width: 36px;
+  max-width: 380px;
+  height: 40px;
+}
+
+/* black background, blue text */
+.button--login-primary {
+  background-color: var(--bg-primary);
+  color: var(--text-tertiary);
+  border-color: var(--text-secondary);
+}
+
+.button--login-secondary {
+  background-color: var(--text-tertiary);
+  color: #fff;
+}
+.button--login-tertiary {
+  background-color: #fff;
+  color: var(--text-secondary);
+}
+/* black background, blue text
+.button--primary {
+  background-color: var(--bg-primary);
+  color: var(--text-tertiary);
+}
+.button--secondary {
+  background-color: green;
+}
+.button--tertiary {
+  background-color: blue;
+} */
