@@ -14,6 +14,12 @@
 /* ~~ .login__main           ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.login {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .login__main {
   display: flex;
   flex-direction: column;
@@ -24,6 +30,12 @@
 
 .login__main-container {
   padding: 16px;
+  overflow: hidden;
+}
+
+.login__main-and-art-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* more styles under .login__main */
@@ -101,38 +113,11 @@
   margin: 48px 0;
 }
 
-@media only screen and (min-width: 500px) {
-  .login__title {
-    /* font needs to be bigger than 48px */
-    /* 1rem = 16px, 5rem = 80px */
-    font-size: 5rem;
-    margin-bottom: 4rem;
-  }
-
-  .login__tagline {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .login__already-have-an-account {
-    margin-top: 3rem;
-  }
-
-  .login__already-have-an-account-text {
-    margin-bottom: 20px;
-  }
-
-  .login__by-siging-up {
-    margin-bottom: 20px;
-  }
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~ .login__art-container  ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .login__art-container {
   height: 327px;
-  border: 1px solid blue;
   min-height: 45vh;
   position: relative;
 }
@@ -147,7 +132,9 @@
 }
 
 .login__logo-overlay {
+  /* min-height: 75%; */
   height: 75%;
+  max-height: 600px;
 }
 
 .login__logo-overlay-container {
@@ -186,4 +173,49 @@
   padding: 3px;
   font-size: small;
   padding: 14px 16px;
+}
+
+@media only screen and (min-width: 500px) {
+  .login__title {
+    /* font needs to be bigger than 48px */
+    /* 1rem = 16px, 5rem = 80px */
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .login__tagline {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .login__already-have-an-account {
+    margin-top: 3rem;
+  }
+
+  .login__already-have-an-account-text {
+    margin-bottom: 20px;
+  }
+
+  .login__by-siging-up {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .login__main-and-art-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+  }
+
+  .login__art-container {
+    min-width: 55vw;
+    height: auto;
+  }
+
+  .login__main-container {
+    min-width: 45vw;
+    display: flex;
+    align-items: center;
+  }
 }

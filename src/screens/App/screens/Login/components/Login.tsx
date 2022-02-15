@@ -10,80 +10,82 @@ import Button from 'shared/components/Button';
 const Login: React.FC = () => {
   return (
     <div className="login">
-      <main className="login__main-container">
-        <div className="login__main">
-          <img
-            className="login__logo"
-            src={yellerBirdGrey}
-            width="50"
-            alt="bird"
-          />
+      <div className="login__main-and-art-container">
+        <main className="login__main-container">
+          <div className="login__main">
+            <img
+              className="login__logo"
+              src={yellerBirdGrey}
+              width="50"
+              alt="bird"
+            />
 
-          <h1 className="login__title">Happening now</h1>
-          <p className="login__tagline">Join Yeller today.</p>
-          <Button
-            buttonType="login-tertiary"
-            buttonText="Sign up with Google"
-          />
+            <h1 className="login__title">Happening now</h1>
+            <p className="login__tagline">Join Yeller today.</p>
+            <Button
+              buttonType="login-tertiary"
+              buttonText="Sign up with Google"
+            />
 
-          <div className="login__or-container">
-            <div className="login__decorative-line-container">
-              <div className="login__decorative-line"></div>
-            </div>
-            <span className="login__or-text">or</span>
+            <div className="login__or-container">
+              <div className="login__decorative-line-container">
+                <div className="login__decorative-line"></div>
+              </div>
+              <span className="login__or-text">or</span>
 
-            <div className="login__decorative-line-container">
-              <div className="login__decorative-line"></div>
-            </div>
-          </div>
-          <Button
-            buttonType="login-secondary"
-            buttonText="Sign up with email"
-            buttonClassName="login__button--sign-up"
-          />
-          <div className="login__by-signing-up">
-            By signing up, you agree to the{' '}
-            <a className="login__by-signing-up-link" href="#">
-              Terms of Service
-            </a>{' '}
-            and{' '}
-            <a className="login__by-signing-up-link" href="#">
-              Privacy Policy
-            </a>
-            , including{' '}
-            <a className="login__by-signing-up-link" href="#">
-              Cookie Use.
-            </a>
-          </div>
-          <div className="login__already-have-an-account">
-            <div className="login__already-have-an-account-text">
-              Already have an account?
+              <div className="login__decorative-line-container">
+                <div className="login__decorative-line"></div>
+              </div>
             </div>
             <Button
-              buttonType="login-primary"
-              buttonText="Sign in"
-              buttonClassName="login__button--sign-in"
+              buttonType="login-secondary"
+              buttonText="Sign up with email"
+              buttonClassName="login__button--sign-up"
+            />
+            <div className="login__by-signing-up">
+              By signing up, you agree to the{' '}
+              <a className="login__by-signing-up-link" href="#">
+                Terms of Service
+              </a>{' '}
+              and{' '}
+              <a className="login__by-signing-up-link" href="#">
+                Privacy Policy
+              </a>
+              , including{' '}
+              <a className="login__by-signing-up-link" href="#">
+                Cookie Use.
+              </a>
+            </div>
+            <div className="login__already-have-an-account">
+              <div className="login__already-have-an-account-text">
+                Already have an account?
+              </div>
+              <Button
+                buttonType="login-primary"
+                buttonText="Sign in"
+                buttonClassName="login__button--sign-in"
+              />
+            </div>
+          </div>
+        </main>
+        <div className="login__art-container">
+          <div
+            className="login__picture"
+            style={{
+              color: 'red',
+              backgroundImage: `url('${loginPicture}')`,
+            }}
+          ></div>
+          <div className="login__logo-overlay-container">
+            <img
+              className="login__logo-overlay"
+              src={yellerBirdWhite}
+              alt="logo"
             />
           </div>
         </div>
-      </main>
-      <div className="login__art-container">
-        <div
-          className="login__picture"
-          style={{
-            color: 'red',
-            backgroundImage: `url('${loginPicture}')`,
-          }}
-        ></div>
-        <div className="login__logo-overlay-container">
-          <img
-            className="login__logo-overlay"
-            src={yellerBirdWhite}
-            alt="logo"
-          />
-        </div>
       </div>
-      <footer>
+      <footer className="login__footer">
         <nav className="login__other-links">
           <a className="login__navlink" href="#">
             About
