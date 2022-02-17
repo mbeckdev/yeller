@@ -1,0 +1,88 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~ Split into large sections of the home screen ~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ .home__nav  ~~ */
+/* ~~ .home__main           ~~ */
+/* ~~ .home__top    ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  .home__nav            ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.home__nav {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: var(--bg-primary);
+
+  height: 50px;
+}
+
+.home__sometimes-hidden {
+  display: none;
+}
+
+.home__post-button-container {
+  background-color: blue;
+  position: absolute;
+  height: 20px;
+  top: -20px;
+  width: 100%;
+}
+
+.home__post-button {
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  .home__main           ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  .home__top            ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.home__title-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 16px;
+}
+
+.home__user-profile-icon {
+  min-width: 56px;
+  min-height: 32px;
+  /* align-items: flex-start; */
+}
+
+.home__title-proile-icon-and-title {
+  display: flex;
+}
+
+/* .home__user-profile-icon {
+
+} */
+.home__title {
+  font-size: 17px;
+  font-weight: 700;
+}

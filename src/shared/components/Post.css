@@ -1,0 +1,97 @@
+.post {
+  display: flex;
+  border: 1px solid orange;
+}
+
+.post__header {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: auto;
+  max-width: 100%;
+}
+
+.post__header-names-and-time-container {
+  background-color: blue;
+  display: flex;
+
+  flex-shrink: 1;
+  max-width: 100%;
+  /* flex-basis: auto; */
+  min-width: 0;
+
+  /* flex: 1; */
+  /* flex: 1 1 auto; */
+  /* flex-wrap: wrap; */
+  /* overflow: hidden; */
+  /* overflow-wrap: break-word; */
+}
+
+.post__ellipses-button {
+  /* flex: none; */
+  /* width: 20px; */
+  border: 1px solid pink;
+  display: flex;
+  flex-basis: auto;
+  flex-shrink: 1;
+  margin-left: 20px;
+}
+
+.post__header-names-container {
+  display: flex;
+  /* overflow: hidden; */
+  flex-shrink: 1;
+  max-width: 100%;
+  flex-basis: auto;
+  /* flex-direction:column; */
+}
+
+.post__action {
+  display: flex;
+  border: 1px solid teal;
+}
+.post__icon-number {
+  margin-left: 0.25rem;
+}
+.post__header-name {
+  /* display: flex;
+  flex-basis: auto;
+  flex-shrink: 0;
+  font-weight: 700;
+
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  min-width: 0;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+
+  flex: 1;
+}
+
+.post__actions-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post__header-at-handle {
+  /* color: var(--text-secondary); */
+  flex: 1;
+}
+
+.collapsible {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.collapsible-container {
+  display: flex;
+  max-width: 100%;
+  /* justify-content: space-between; */
+}
