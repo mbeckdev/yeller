@@ -55,6 +55,17 @@
   top: -20px;
   right: 0;
 }
+
+.home__nav-icon-container {
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+}
+
+.home__nav-icon {
+  width: 100%;
+  height: 100%;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~  .home__main           ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

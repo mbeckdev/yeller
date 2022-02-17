@@ -2,6 +2,11 @@ import React from 'react';
 import Post from 'shared/components/Post';
 import './Home.css';
 
+import iconHouse from 'assets/iconHouseMinifiedCropped.svg';
+import iconMagnifyingGlass from 'assets/iconMagnifyingGlass2MinifiedCropped.svg';
+import iconBell from 'assets/iconBellMinifiedCropped.svg';
+import iconEnvelope from 'assets/iconEnvelopMinifiedCropped.svg';
+
 const Home: React.FC = () => {
   return (
     <div className="home">
@@ -14,7 +19,7 @@ const Home: React.FC = () => {
             </div>
             <div>stars icon</div>
           </div>
-          <div className="home__show-tweets-container">Show 79 Yells</div>
+          <div className="home__show-tweets-container">Show 791 Yells</div>
         </div>
         <div className="home__feed">
           <Post />
@@ -31,14 +36,30 @@ const Home: React.FC = () => {
         <div className="home__post-button-container">
           <div className="home__post-button">feather</div>
         </div>
-        <div>icon1</div>
-        <div>icon2</div>
-        <div>icon3</div>
-        <div>icon4</div>
-        <div className="home__sometimes-hidden">icon5</div>
-        <div className="home__sometimes-hidden">icon6</div>
-        <div className="home__sometimes-hidden">icon7</div>
-        <div className="home__sometimes-hidden">icon8</div>
+
+        <div className="home__nav-icon-container">
+          <img src={iconHouse} alt="house icon" className="home__nav-icon" />
+        </div>
+        <div className="home__nav-icon-container">
+          <img
+            src={iconMagnifyingGlass}
+            alt="house icon"
+            className="home__nav-icon"
+          />
+        </div>
+        <div className="home__nav-icon-container">
+          <img src={iconBell} alt="house icon" className="home__nav-icon" />
+        </div>
+        <div className="home__nav-icon-container">
+          <img src={iconEnvelope} alt="house icon" className="home__nav-icon" />
+        </div>
+
+        <div className="home__sometimes-hidden home__tweet-button-icon">
+          icon9
+        </div>
+        <div className="home__sometimes-hidden home__tweet-button-icon">
+          icon9
+        </div>
         <div className="home__sometimes-hidden home__tweet-button-icon">
           icon9
         </div>
