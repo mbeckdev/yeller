@@ -1,7 +1,46 @@
-.post {
-  display: flex;
-  border: 1px solid orange;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Split into these large sections: */
+/* ~~ Bottom Icon Section    ~~ */
+/* ~~ Header - the line with the name in it    ~~ */
+/* ~~ profile pic stuff      ~~ */
+/* ~~ Everything else        ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ Bottom Icon Section    ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.post__actions-container {
+  margin-top: 12px;
 }
+
+.post__action {
+  display: flex;
+  /* border: 1px solid teal; */
+}
+
+.icon__reply-container,
+.icon__repost-container,
+.icon__like-container,
+.icon__share-container {
+  height: 1rem;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: flex-end;
+}
+.icon__reply,
+.icon__repost,
+.icon__like,
+.icon__share {
+  height: 80%;
+  /* border: 1px solid blue; */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ Header - the line with the name in it    ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .post__header {
   display: flex;
@@ -13,13 +52,13 @@
 }
 
 .post__header-names-and-time-container {
-  background-color: blue;
   display: flex;
+  /* background-color: blue; */
 
   flex-shrink: 1;
   max-width: 100%;
-  /* flex-basis: auto; */
   min-width: 0;
+  /* flex-basis: auto; */
 
   /* flex: 1; */
   /* flex: 1 1 auto; */
@@ -29,13 +68,21 @@
 }
 
 .post__ellipses-button {
-  /* flex: none; */
-  /* width: 20px; */
-  border: 1px solid pink;
   display: flex;
   flex-basis: auto;
   flex-shrink: 1;
   margin-left: 20px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+
+  width: 30px;
+  height: 30px;
+  padding: 0 6px;
+  border-radius: 50%;
+}
+
+.icon__ellipses {
+  width: 100%;
 }
 
 .post__header-names-container {
@@ -47,13 +94,6 @@
   /* flex-direction:column; */
 }
 
-.post__action {
-  display: flex;
-  border: 1px solid teal;
-}
-.post__icon-number {
-  margin-left: 0.25rem;
-}
 .post__header-name {
   /* display: flex;
   flex-basis: auto;
@@ -74,14 +114,59 @@
   flex: 1;
 }
 
+.post__header-at-handle {
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.post__header-dot,
+.post__header-recentness {
+  color: var(--text-secondary);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ profile pic stuff ~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.post__profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.post__profile-pic-container {
+  width: 48px;
+  height: 48px;
+  /* border-radius: 50%; */
+  /* border: 1px solid red; */
+}
+
+.post__profile-pic-side-container {
+  /* width: 100px;
+  height: 100px;
+  border-radius: 50%; */
+  /* border: 1px solid orange; */
+  margin-right: 12px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~ Everything else        ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.post {
+  display: flex;
+  padding: 12px 16px 0 16px;
+  line-height: 1.25rem;
+  font-size: 14px;
+}
+
+.post__icon-number {
+  margin-left: 0.25rem;
+}
+
 .post__actions-container {
   display: flex;
   justify-content: space-around;
-}
-
-.post__header-at-handle {
-  /* color: var(--text-secondary); */
-  flex: 1;
 }
 
 .collapsible {
@@ -94,4 +179,8 @@
   display: flex;
   max-width: 100%;
   /* justify-content: space-between; */
+}
+
+.post__main {
+  padding-bottom: 12px;
 }

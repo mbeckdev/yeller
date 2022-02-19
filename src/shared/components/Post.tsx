@@ -1,6 +1,14 @@
 import React from 'react';
 import './Post.css';
 
+import iconReply from 'assets/iconReplyMinifiedCropped.svg';
+import iconRepost from 'assets/iconRepostMinifiedCropped.svg';
+import iconLike from 'assets/iconLikeMinifiedCropped.svg';
+import iconShare from 'assets/iconShareMinifiedCropped.svg';
+import iconEllipses from 'assets/iconEllipses2MinifiedCropped.svg';
+
+import profilePic from 'assets/defaultProfilePic.jpg';
+
 // todo: each post should have a postID
 // and who posted it, the data
 // take the who and fill in the name, at handle, and picture
@@ -8,8 +16,10 @@ import './Post.css';
 const Post: React.FC = () => {
   return (
     <div className="post">
-      <div className="post__profile-pic-container">
-        <div>profile pic</div>
+      <div className="post__profile-pic-side-container">
+        <div className="post__profile-pic-container">
+          <img className="post__profile-pic" src={profilePic} alt="profile" />
+        </div>
       </div>
       <div className="post__main">
         <div className="post__header">
@@ -27,7 +37,9 @@ const Post: React.FC = () => {
             <div className="post__header-recentness">{`41m`}</div>
           </div>
 
-          <div className="post__ellipses-button">...</div>
+          <div className="post__ellipses-button">
+            <img className="icon__ellipses" src={iconEllipses} alt="ellipses" />
+          </div>
         </div>
 
         <div className="post__text">
@@ -38,19 +50,30 @@ const Post: React.FC = () => {
         </div>
         <div className="post__actions-container">
           <div className="post__action">
-            <div>icon1</div>
+            <div className="icon__reply-container">
+              <img className="icon__reply" src={iconReply} alt="reply" />
+            </div>
             <div className="post__icon-number">1</div>
           </div>
+
           <div className="post__action">
-            <div>icon2</div>
+            <div className="icon__repost-container">
+              <img className="icon__repost" src={iconRepost} alt="repost" />
+            </div>
             <div className="post__icon-number">1</div>
           </div>
+
           <div className="post__action">
-            <div>icon3</div>
+            <div className="icon__like-container">
+              <img className="icon__like" src={iconLike} alt="like" />
+            </div>
             <div className="post__icon-number">1</div>
           </div>
+
           <div className="post__action">
-            <div>icon4</div>
+            <div className="icon__share-container">
+              <img className="icon__share" src={iconShare} alt="share" />
+            </div>
             <div className="post__icon-number">1</div>
           </div>
         </div>
