@@ -95,6 +95,7 @@
 }
 
 .post__header-name {
+  font-weight: 700;
   /* display: flex;
   flex-basis: auto;
   flex-shrink: 0;
@@ -122,6 +123,10 @@
 .post__header-dot,
 .post__header-recentness {
   color: var(--text-secondary);
+}
+
+.post__header-dot {
+  padding: 0 4px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -157,11 +162,13 @@
   display: flex;
   padding: 12px 16px 0 16px;
   line-height: 1.25rem;
-  font-size: 14px;
+  font-size: 15px;
+  border-bottom: 1px solid var(--text-secondary);
 }
 
 .post__icon-number {
   margin-left: 0.25rem;
+  color: var(--text-secondary);
 }
 
 .post__actions-container {

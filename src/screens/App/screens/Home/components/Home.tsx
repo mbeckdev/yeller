@@ -6,6 +6,9 @@ import iconHouse from 'assets/iconHouseMinifiedCropped.svg';
 import iconMagnifyingGlass from 'assets/iconMagnifyingGlass2MinifiedCropped.svg';
 import iconBell from 'assets/iconBellMinifiedCropped.svg';
 import iconEnvelope from 'assets/iconEnvelopMinifiedCropped.svg';
+import iconStars from 'assets/iconStars2MinifiedCropped.svg';
+
+import profilePic from 'assets/defaultProfilePic.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -13,11 +16,19 @@ const Home: React.FC = () => {
       <main className="home__main">
         <div className="home__top">
           <div className="home__title-container">
-            <div className="home__title-proile-icon-and-title">
-              <div className="home__user-profile-icon">profile icon</div>
+            <div className="home__title-profile-icon-and-title">
+              <div className="home__user-profile-icon">
+                <img
+                  className="home__profile-pic"
+                  src={profilePic}
+                  alt="profile"
+                />
+              </div>
               <h1 className="home__title">Home</h1>
             </div>
-            <div>stars icon</div>
+            <div className="home__stars-icon-container">
+              <img src={iconStars} alt="stars" className="home__stars-icon" />
+            </div>
           </div>
           <div className="home__show-tweets-container">Show 791 Yells</div>
         </div>

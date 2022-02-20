@@ -4,7 +4,7 @@ import './Post.css';
 import iconReply from 'assets/iconReplyMinifiedCropped.svg';
 import iconRepost from 'assets/iconRepostMinifiedCropped.svg';
 import iconLike from 'assets/iconLikeMinifiedCropped.svg';
-import iconShare from 'assets/iconShareMinifiedCropped.svg';
+import iconShare from 'assets/iconShareCircles2MinifiedCropped.svg';
 import iconEllipses from 'assets/iconEllipses2MinifiedCropped.svg';
 
 import profilePic from 'assets/defaultProfilePic.jpg';
