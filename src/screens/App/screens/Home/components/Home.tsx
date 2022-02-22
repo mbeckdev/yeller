@@ -44,9 +44,9 @@ const Home: React.FC = () => {
         </div>
       </main>
       <nav className="home__nav">
-        <div className="home__post-button-container">
-          <div className="home__post-button">feather</div>
-        </div>
+        {/* <div className="home__post-button-container"> */}
+        <div className="home__post-button">+</div>
+        {/* </div> */}
 
         <div className="home__nav-icon-container">
           <img src={iconHouse} alt="house icon" className="home__nav-icon" />

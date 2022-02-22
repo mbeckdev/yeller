@@ -6,6 +6,7 @@
   --text-secondary: rgb(110, 118, 125);
   --text-tertiary: rgb(28, 154, 239);
   --color-blue: var(--text-tertiary);
+  --decorative-line: rgb(47, 51, 54);
 }
 
 * {

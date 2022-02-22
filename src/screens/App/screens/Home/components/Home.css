@@ -3,9 +3,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~ .home__nav  ~~ */
-/* ~~ .home__main           ~~ */
 /* ~~ .home__top    ~~ */
+/* ~~ .home__main           ~~ */
+/* ~~ .home__nav  ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -13,62 +13,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~  .home__nav            ~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.home__nav {
-  border: 1px solid blue;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  position: fixed;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  background-color: var(--bg-primary);
-
-  height: 50px;
-}
-
-.home__sometimes-hidden {
-  display: none;
-}
-
-.home__post-button-container {
-  background-color: blue;
-  position: absolute;
-  height: 20px;
-  top: -20px;
-  width: 100%;
-}
-
-.home__post-button {
-  height: 20px;
-  width: 20px;
-  background-color: green;
-  position: absolute;
-  top: -20px;
-  right: 0;
-}
-
-.home__nav-icon-container {
-  width: 20px;
-  height: 20px;
-  /* background-color: red; */
-}
-
-.home__nav-icon {
-  width: 100%;
-  height: 100%;
-}
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~  .home__main           ~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~  .home__top            ~~ */
@@ -116,7 +61,7 @@
   margin-top: 1rem;
   padding-bottom: 1rem;
 
-  border-bottom: 1px solid var(--text-secondary);
+  border-bottom: 1px solid var(--decorative-line);
 }
 
 .home__stars-icon-container {
@@ -130,4 +75,69 @@
   /* border: 1px solid red; */
   height: 100%;
   color: blue;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  .home__main           ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  .home__nav            ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.home__nav {
+  /* border: 1px solid blue; */
+  border-top: 1px solid var(--decorative-line);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: var(--bg-primary);
+
+  height: 50px;
+}
+
+.home__sometimes-hidden {
+  display: none;
+}
+
+/* .home__post-button-container {
+  background-color: red;
+  border: 1px solid red;
+  position: absolute;
+  height: 0px;
+  top: -0px;
+  width: 100%;
+} */
+
+.home__post-button {
+  height: 56px;
+  width: 56px;
+  background-color: var(--bg-secondary);
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff;
+
+  position: absolute;
+  top: -76px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.home__nav-icon-container {
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+}
+
+.home__nav-icon {
+  width: 100%;
+  height: 100%;
 }

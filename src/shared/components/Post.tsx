@@ -25,16 +25,13 @@ const Post: React.FC = () => {
         <div className="post__header">
           <div className="post__header-names-and-time-container">
             <div className="post__header-names-container">
-              <div className="post__header-name collapsible">
-                NameAasdfasdfasfasdfasdf
-              </div>
-
-              <div className="post__header-at-handle collapsible">
-                @somethingName1
-              </div>
+              <div className="post__header-name ">NameAasdfasdfasfasdfasdf</div>
+              <div className="post__header-at-handle ">@somethingName1</div>
             </div>
-            <div className="post__header-dot">&#8901;</div>
-            <div className="post__header-recentness">{`41m`}</div>
+            <div className="post__header-dot-and-recentness-container">
+              <div className="post__header-dot">&#8901;</div>
+              <div className="post__header-recentness">{`41m`}</div>
+            </div>
           </div>
 
           <div className="post__ellipses-button">

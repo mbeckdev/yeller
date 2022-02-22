@@ -12,13 +12,13 @@
 /* ~~ Bottom Icon Section    ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.post__actions-container {
-  margin-top: 12px;
-}
-
 .post__action {
   display: flex;
   /* border: 1px solid teal; */
+}
+
+.post__actions-container {
+  margin-top: 12px;
 }
 
 .icon__reply-container,
@@ -30,6 +30,7 @@
   display: flex;
   align-items: flex-end;
 }
+
 .icon__reply,
 .icon__repost,
 .icon__like,
@@ -49,15 +50,21 @@
   justify-content: space-between;
   flex-basis: auto;
   max-width: 100%;
+  /* max-width: fit-content; */
+
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* overflow: hidden; */
 }
 
 .post__header-names-and-time-container {
   display: flex;
   /* background-color: blue; */
+  /* border: 1px solid red; */
 
-  flex-shrink: 1;
-  max-width: 100%;
-  min-width: 0;
   /* flex-basis: auto; */
 
   /* flex: 1; */
@@ -65,6 +72,75 @@
   /* flex-wrap: wrap; */
   /* overflow: hidden; */
   /* overflow-wrap: break-word; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /* flex-shrink: 1;
+  max-width: 100%;
+  min-width: 0; */
+}
+
+.post__header-names-container {
+  display: flex;
+  /* overflow: hidden; */
+  /* flex-shrink: 1; */
+  /* max-width: 100%; */
+  /* flex-basis: auto; */
+  /* flex-direction:column; */
+  /* border: 1px solid pink; */
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.post__header-name {
+  font-weight: 700;
+  /* border: 1px solid blue; */
+  /* display: flex;
+  flex-basis: auto;
+  flex-shrink: 0;
+  font-weight: 700;
+
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  min-width: 0;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+
+  /* flex: 1; */
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.post__header-at-handle {
+  /* border: 1px solid green; */
+  color: var(--text-secondary);
+  /* flex: 1; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.post__header-dot,
+.post__header-recentness {
+  color: var(--text-secondary);
+}
+
+.post__header-dot-and-recentness-container {
+  display: flex;
+  /* border: 1px solid lightgreen; */
+}
+
+.post__header-dot {
+  padding: 0 4px;
 }
 
 .post__ellipses-button {
@@ -83,50 +159,6 @@
 
 .icon__ellipses {
   width: 100%;
-}
-
-.post__header-names-container {
-  display: flex;
-  /* overflow: hidden; */
-  flex-shrink: 1;
-  max-width: 100%;
-  flex-basis: auto;
-  /* flex-direction:column; */
-}
-
-.post__header-name {
-  font-weight: 700;
-  /* display: flex;
-  flex-basis: auto;
-  flex-shrink: 0;
-  font-weight: 700;
-
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  min-width: 0;
-
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden; */
-
-  flex: 1;
-}
-
-.post__header-at-handle {
-  color: var(--text-secondary);
-  flex: 1;
-}
-
-.post__header-dot,
-.post__header-recentness {
-  color: var(--text-secondary);
-}
-
-.post__header-dot {
-  padding: 0 4px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -158,24 +190,6 @@
 /* ~~ Everything else        ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.post {
-  display: flex;
-  padding: 12px 16px 0 16px;
-  line-height: 1.25rem;
-  font-size: 15px;
-  border-bottom: 1px solid var(--text-secondary);
-}
-
-.post__icon-number {
-  margin-left: 0.25rem;
-  color: var(--text-secondary);
-}
-
-.post__actions-container {
-  display: flex;
-  justify-content: space-around;
-}
-
 .collapsible {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -186,6 +200,24 @@
   display: flex;
   max-width: 100%;
   /* justify-content: space-between; */
+}
+
+.post {
+  display: flex;
+  padding: 12px 16px 0 16px;
+  line-height: 1.25rem;
+  font-size: 15px;
+  border-bottom: 1px solid var(--decorative-line);
+}
+
+.post__actions-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post__icon-number {
+  margin-left: 0.25rem;
+  color: var(--text-secondary);
 }
 
 .post__main {
