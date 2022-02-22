@@ -6,4 +6,4 @@ because I think it's kind of funny.
 
 ## Why
 
-To practice React and Typescript and more coding things
+To practice React and Typescript and more coding things.
