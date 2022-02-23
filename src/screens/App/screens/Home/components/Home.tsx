@@ -7,6 +7,8 @@ import iconMagnifyingGlass from 'assets/iconMagnifyingGlass2MinifiedCropped.svg'
 import iconBell from 'assets/iconBellMinifiedCropped.svg';
 import iconEnvelope from 'assets/iconEnvelopMinifiedCropped.svg';
 import iconStars from 'assets/iconStars2MinifiedCropped.svg';
+import iconLogo from 'assets/yellerBirdGrey.svg';
+// import iconThing from 'assets'
 
 import profilePic from 'assets/defaultProfilePic.jpg';
 
@@ -43,38 +45,43 @@ const Home: React.FC = () => {
           <Post />
         </div>
       </main>
-      <nav className="home__nav">
-        {/* <div className="home__post-button-container"> */}
-        <div className="home__post-button">+</div>
-        {/* </div> */}
+      <div className="home__nav-container">
+        <nav className="home__nav">
+          <div className=" home__nav-logo-container home__sometimes-hidden">
+            <img src={iconLogo} alt="logo" className="home__nav-icon " />
+          </div>
 
-        <div className="home__nav-icon-container">
-          <img src={iconHouse} alt="house icon" className="home__nav-icon" />
-        </div>
-        <div className="home__nav-icon-container">
-          <img
-            src={iconMagnifyingGlass}
-            alt="house icon"
-            className="home__nav-icon"
-          />
-        </div>
-        <div className="home__nav-icon-container">
-          <img src={iconBell} alt="house icon" className="home__nav-icon" />
-        </div>
-        <div className="home__nav-icon-container">
-          <img src={iconEnvelope} alt="house icon" className="home__nav-icon" />
-        </div>
+          <div className="home__nav-icon-container">
+            <img src={iconHouse} alt="house" className="home__nav-icon" />
+          </div>
 
-        <div className="home__sometimes-hidden home__tweet-button-icon">
-          icon9
-        </div>
-        <div className="home__sometimes-hidden home__tweet-button-icon">
-          icon9
-        </div>
-        <div className="home__sometimes-hidden home__tweet-button-icon">
-          icon9
-        </div>
-      </nav>
+          <div className="home__nav-icon-container">
+            <img
+              src={iconMagnifyingGlass}
+              alt="magnifying glass"
+              className="home__nav-icon"
+            />
+          </div>
+          <div className="home__nav-icon-container">
+            <img src={iconBell} alt="house icon" className="home__nav-icon" />
+          </div>
+          <div className="home__nav-icon-container">
+            <img src={iconEnvelope} alt="envelope" className="home__nav-icon" />
+          </div>
+
+          <div className="home__nav-icon-container home__sometimes-hidden">
+            <img src={iconBell} alt="house icon" className="home__nav-icon" />
+          </div>
+          <div className="home__nav-icon-container home__sometimes-hidden">
+            <img src={iconBell} alt="house icon" className="home__nav-icon" />
+          </div>
+          <div className="home__nav-icon-container home__sometimes-hidden">
+            <img src={iconBell} alt="house icon" className="home__nav-icon" />
+          </div>
+
+          <div className="home__post-button">+</div>
+        </nav>
+      </div>
     </div>
   );
 };

@@ -3,9 +3,10 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~ .home__top    ~~ */
-/* ~~ .home__main           ~~ */
-/* ~~ .home__nav  ~~ */
+/* ~~ .home__top             ~~ */
+/* ~~ .home__main            ~~ */
+/* ~~ .home__nav             ~~ */
+/* ~~ @media queries         ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -20,7 +21,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home__profile-pic {
-  /* width: 100%; */
   height: 100%;
   border-radius: 50%;
 }
@@ -37,13 +37,11 @@
 
 .home__stars-icon-container {
   height: 1.25rem;
-  /* border: 1px solid red; */
   display: flex;
   align-items: flex-end;
 }
 
 .home__stars-icon {
-  /* border: 1px solid red; */
   height: 100%;
   color: blue;
 }
@@ -64,15 +62,12 @@
 
 .home__title-profile-icon-and-title {
   display: flex;
-  /* border: 1px solid orange; */
   align-items: center;
 }
 
 .home__user-profile-icon {
   width: 56px;
   height: 32px;
-  /* align-items: flex-start; */
-  /* border: 1px solid yellow; */
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -140,3 +135,56 @@
   top: -0px;
   width: 100%;
 } */
+
+@media only screen and (min-width: 500px) {
+  .home {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* background-color: brown; */
+  }
+
+  .home__nav {
+    position: fixed;
+    top: 0;
+    bottom: initial;
+    left: initial;
+
+    width: 60px;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-right: 1px solid var(--decorative-line);
+  }
+
+  .home__nav-container {
+    position: relative;
+    min-width: 60px;
+  }
+
+  .home__nav-logo-container {
+    width: 35px;
+    height: 50px;
+  }
+  .home__nav-icon-container {
+    height: 50px;
+  }
+
+  .home__sometimes-hidden {
+    display: initial;
+  }
+
+  .home__post-button {
+    position: relative;
+    top: initial;
+    right: initial;
+
+    width: 50px;
+    height: 50px;
+  }
+}
