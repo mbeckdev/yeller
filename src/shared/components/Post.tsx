@@ -25,7 +25,7 @@ const Post: React.FC = () => {
         <div className="post__header">
           <div className="post__header-names-and-time-container">
             <div className="post__header-names-container">
-              <div className="post__header-name ">NameAasdfasdfasfasdfasdf</div>
+              <div className="post__header-name ">NameAasdf</div>
               <div className="post__header-at-handle ">@somethingName1</div>
             </div>
             <div className="post__header-dot-and-recentness-container">

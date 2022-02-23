@@ -11,6 +11,7 @@ import iconLogo from 'assets/yellerBirdGrey.svg';
 // import iconThing from 'assets'
 
 import profilePic from 'assets/defaultProfilePic.jpg';
+import Button from 'shared/components/Button';
 
 const Home: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const Home: React.FC = () => {
         <div className="home__top">
           <div className="home__title-container">
             <div className="home__title-profile-icon-and-title">
-              <div className="home__user-profile-icon">
+              <div className="home__user-profile-icon home__hidden-in-desktop-view">
                 <img
                   className="home__profile-pic"
                   src={profilePic}
@@ -32,8 +33,48 @@ const Home: React.FC = () => {
               <img src={iconStars} alt="stars" className="home__stars-icon" />
             </div>
           </div>
+
+          <div className="home__new-post-container">
+            <div className="home__new-post-user-profile-icon">
+              <img
+                className="home__profile-pic"
+                src={profilePic}
+                alt="profile"
+              />
+            </div>
+            <div className="home__new-post-main">
+              <input
+                type="text"
+                placeholder="What's happening?"
+                className="home__new-post-text"
+              />
+
+              <div className="home__new-post-who-can-reply-container">
+                <div>worldicon</div>
+                <div>Everyone can reply</div>
+              </div>
+
+              <div className="home__new-post-button-container">
+                <div className="home__new-post-icon-button-container">
+                  <div>btn1</div>
+                  <div>btn1</div>
+                  <div>btn1</div>
+                  <div>btn1</div>
+                  <div>btn1</div>
+                </div>
+
+                <Button
+                  buttonClassName="home__new-post-button"
+                  buttonType="login-secondary"
+                  buttonText="YELL"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="home__show-tweets-container">Show 791 Yells</div>
         </div>
+
         <div className="home__feed">
           <Post />
           <Post />
