@@ -18,40 +18,11 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~  .home__top            ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.home__title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0 16px;
-  height: 53px;
-}
-
-.home__user-profile-icon {
-  width: 56px;
-  height: 32px;
-  /* align-items: flex-start; */
-  /* border: 1px solid yellow; */
-}
 
 .home__profile-pic {
   /* width: 100%; */
   height: 100%;
   border-radius: 50%;
-}
-
-.home__title-profile-icon-and-title {
-  display: flex;
-  /* border: 1px solid orange; */
-  align-items: center;
-}
-
-/* .home__user-profile-icon {
-
-} */
-.home__title {
-  font-size: 17px;
-  font-weight: 700;
 }
 
 .home__show-tweets-container {
@@ -77,6 +48,33 @@
   color: blue;
 }
 
+.home__title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.home__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 16px;
+  height: 53px;
+}
+
+.home__title-profile-icon-and-title {
+  display: flex;
+  /* border: 1px solid orange; */
+  align-items: center;
+}
+
+.home__user-profile-icon {
+  width: 56px;
+  height: 32px;
+  /* align-items: flex-start; */
+  /* border: 1px solid yellow; */
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~  .home__main           ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -84,6 +82,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~  .home__nav            ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .home__nav {
   /* border: 1px solid blue; */
   border-top: 1px solid var(--decorative-line);
@@ -101,18 +100,20 @@
   height: 50px;
 }
 
+.home__nav-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.home__nav-icon-container {
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+}
+
 .home__sometimes-hidden {
   display: none;
 }
-
-/* .home__post-button-container {
-  background-color: red;
-  border: 1px solid red;
-  position: absolute;
-  height: 0px;
-  top: -0px;
-  width: 100%;
-} */
 
 .home__post-button {
   height: 56px;
@@ -131,13 +132,11 @@
   border-radius: 50%;
 }
 
-.home__nav-icon-container {
-  width: 20px;
-  height: 20px;
-  /* background-color: red; */
-}
-
-.home__nav-icon {
+/* .home__post-button-container {
+  background-color: red;
+  border: 1px solid red;
+  position: absolute;
+  height: 0px;
+  top: -0px;
   width: 100%;
-  height: 100%;
-}
+} */
