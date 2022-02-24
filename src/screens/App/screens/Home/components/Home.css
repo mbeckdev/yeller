@@ -6,6 +6,7 @@
 /* ~~ .home__top             ~~ */
 /*             new post section */
 /* ~~ .home__main            ~~ */
+/* ~~ .home__aside            ~~ */
 /* ~~ .home__nav             ~~ */
 /* ~~ @media queries         ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -143,11 +144,18 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  .home__aside           ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.home__hidden-in-first-two-views {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~  .home__nav            ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home__nav {
-  /* border: 1px solid blue; */
   border-top: 1px solid var(--decorative-line);
   display: flex;
   justify-content: space-around;
@@ -247,6 +255,28 @@
   }
 
   .home__new-post-container {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1005px) {
+  .home__aside {
+    min-width: 290px;
+    margin: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__aside-section {
+    padding: 1rem;
+    background-color: var(--bg-tertiary);
+    border-radius: 2rem;
+    min-height: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .home__hidden-in-first-two-views {
     display: flex;
   }
 }

@@ -8,7 +8,9 @@ import iconBell from 'assets/iconBellMinifiedCropped.svg';
 import iconEnvelope from 'assets/iconEnvelopMinifiedCropped.svg';
 import iconStars from 'assets/iconStars2MinifiedCropped.svg';
 import iconLogo from 'assets/yellerBirdGrey.svg';
-// import iconThing from 'assets'
+import iconBookmarks from 'assets/iconBookmarksMinifiedCropped.svg';
+import iconLists from 'assets/iconListsMinifiedCropped.svg';
+import iconProfile from 'assets/iconProfileMinifiedCropped.svg';
 
 import profilePic from 'assets/defaultProfilePic.jpg';
 import Button from 'shared/components/Button';
@@ -16,6 +18,11 @@ import Button from 'shared/components/Button';
 const Home: React.FC = () => {
   return (
     <div className="home">
+      <aside className="home__aside home__hidden-in-first-two-views">
+        <div className="home__aside-section">Search Twitter</div>
+        <div className="home__aside-section">What's happening</div>
+        <div className="home__aside-section">Who to follow</div>
+      </aside>
       <main className="home__main">
         <div className="home__top">
           <div className="home__title-container">
@@ -86,6 +93,7 @@ const Home: React.FC = () => {
           <Post />
         </div>
       </main>
+
       <div className="home__nav-container">
         <nav className="home__nav">
           <div className=" home__nav-logo-container home__sometimes-hidden">
@@ -111,13 +119,17 @@ const Home: React.FC = () => {
           </div>
 
           <div className="home__nav-icon-container home__sometimes-hidden">
-            <img src={iconBell} alt="house icon" className="home__nav-icon" />
+            <img
+              src={iconBookmarks}
+              alt="bookmarks"
+              className="home__nav-icon"
+            />
           </div>
           <div className="home__nav-icon-container home__sometimes-hidden">
-            <img src={iconBell} alt="house icon" className="home__nav-icon" />
+            <img src={iconLists} alt="lists" className="home__nav-icon" />
           </div>
           <div className="home__nav-icon-container home__sometimes-hidden">
-            <img src={iconBell} alt="house icon" className="home__nav-icon" />
+            <img src={iconProfile} alt="profile" className="home__nav-icon" />
           </div>
 
           <div className="home__post-button">+</div>
