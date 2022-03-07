@@ -143,6 +143,10 @@
 /* ~~  .home__main           ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.home__main {
+  max-width: 598px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~  .home__aside           ~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -205,8 +209,8 @@
 @media only screen and (min-width: 500px) {
   .home {
     display: flex;
-    justify-content: flex-end;
     flex-direction: row-reverse;
+    justify-content: center;
   }
 
   .home__nav {
@@ -261,7 +265,8 @@
 
 @media only screen and (min-width: 1005px) {
   .home__aside {
-    min-width: 290px;
+    width: 290px;
+    /* min-width: 290px; */
     margin: 0 1rem;
 
     display: flex;
@@ -278,5 +283,11 @@
 
   .home__hidden-in-first-two-views {
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 1095px) {
+  .home__aside {
+    width: 350px;
   }
 }
